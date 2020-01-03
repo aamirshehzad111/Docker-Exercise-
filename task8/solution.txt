@@ -1,0 +1,5 @@
+deploy:
+  update_config:
+	delay: 10s
+Specify configuration related to the deployment and running of services. 
+This only takes effect when deploying to a swarm with docker stack deploy, and is ignored by docker-compose up and docker-compose run.

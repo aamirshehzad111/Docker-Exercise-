@@ -1,0 +1,5 @@
+docker run --name eg -e tmpvar=5 alpine sh  --> echo ${tmpvar} 
+docker export --output="alpine-container.tar" eg 
+tar -tvf alpine-container.tar
+tar -xvf alpine-container.tar
+

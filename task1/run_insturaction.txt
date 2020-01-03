@@ -1,0 +1,4 @@
+docker-compose -f docker-compose.yaml up --> bring up everything 
+docker-compose -f docker-compose.yaml up -d db web  --> run both container in deattach mode 
+docker-compose -f docker-compose.yaml up test  --> just spin up test container
+docker-compose -f docker-compose.yaml down  --> bring down everything

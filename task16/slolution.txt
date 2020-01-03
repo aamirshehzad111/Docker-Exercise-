@@ -1,0 +1,6 @@
+!#/bin/bash 
+
+docker pull alpine
+docker save --output alpine.tar alpine # --> docker save -o <file.tar> <image_name> -o output to file
+tar tvf alpine.tar #tar tvf <f.tar>
+tar xvf alpine.tar #tar xvf <f.tar>

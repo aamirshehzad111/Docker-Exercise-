@@ -1,0 +1,4 @@
+docker run  --rm busybox echo "change this word to" | docker run  -i busybox sed -n 's/this/that/p'
+
+--> pipeline will give output of first container as input to second 
+--> --rm remove the immadiate container the momement run command execute

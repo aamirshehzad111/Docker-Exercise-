@@ -1,0 +1,7 @@
+We need to allow only a single instance of a container to run on a host. This needs to be enforced no matter what arguments are used to run it (so don't try to skate by with using a named container).
+
+What ways can you think of to do this?
+
+solution:
+
+if we running containers on ecs we can use task placement stratgies to achieve this. in docker we can use control group i think, we can allow all resources to just single container.

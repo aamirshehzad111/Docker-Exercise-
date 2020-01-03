@@ -1,0 +1,14 @@
+docker run -it --name=test1 alpine:latest date
+docker run -it --name=test1 alpine:latest date
+
+1 
+
+Both container have same name.. you can set unique name then they will be running prefectly.
+
+2
+
+using --rm with first container.. --rm does, it roemove first container after executing the run command and second contianer will run without any name conflict.
+
+docker run --rm  -it --name=test1 alpine:latest date
+docker run -it --name=test1 alpine:latest date
+

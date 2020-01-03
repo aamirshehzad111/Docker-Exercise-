@@ -1,0 +1,10 @@
+
+limit your process's use of system resources like CPU or may want to put certain limitations on things like number of open file descriptors,
+maximum memory your process can allocate for its data etc.
+You may use commands like ulimit, sysconf etc to control these resources from shell.
+
+RLIMIT_NPROC
+The maximum number of processes (or, more precisely on Linux, threads) that can be created for the real user ID of the calling process.
+Upon encountering this limit, fork(2) fails with the error EAGAIN. 
+
+ulimit to limit resources.

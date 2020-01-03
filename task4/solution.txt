@@ -1,0 +1,4 @@
+need to add source code -- server.js
+here we go
+docker run -it --rm -v ${PWD}:/root -w=/root node node server.js abc
+

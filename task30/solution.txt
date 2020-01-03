@@ -1,0 +1,6 @@
+docker ps --format '{{.Command .Image}}'
+you can use them is seperate way
+
+docker ps --format '{{.Command}} {{.Image}}'
+
+

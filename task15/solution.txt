@@ -1,0 +1,4 @@
+For example, to find the names of all containers with a non-zero exit code:
+
+docker inspect -f '{{if ne 0 .State.ExitCode }}{{.Name}} {{.State.ExitCode}}{{ end }}' $(docker ps -aq)
+

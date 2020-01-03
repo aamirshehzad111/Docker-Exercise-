@@ -1,0 +1,1 @@
+docker run --rm -e ITEM=544444 testenv1

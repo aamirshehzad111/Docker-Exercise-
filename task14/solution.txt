@@ -1,0 +1,4 @@
+docker inspect --type=container testthing
+docker inspect --type=image testthing
+
+We can provide --type flag to be more specific

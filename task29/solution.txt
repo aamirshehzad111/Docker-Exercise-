@@ -1,0 +1,12 @@
+--> docker trust generate key jeff
+--> docker trust []
+
+export DOCKER_CONTENT_TRUST=1
+
+only image gets downloaded if it is signed 
+
+docker trust inspect ubuntu:16.04  --> give key and repo
+
+export DOCKER_CONTENT_TRUST=0
+
+wont check whether is signed or not

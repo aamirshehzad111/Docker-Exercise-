@@ -1,0 +1,12 @@
+Docker DataContainers:
+
+docker create -v /config --name dataContainer busybox
+
+--> we can share that volume with other container. using flag --volume-from <container>
+--> changes will be reflected in all other containers.
+
+let say you copy a file from your local machine to data container that you wanna share with other containers.
+docker cp tarfet-file dataContainer:/config/
+
+let say run other container.
+docker run --volumes-from dataContainer ubuntu ls config

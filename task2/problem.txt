@@ -1,0 +1,1 @@
+Environment variable exercise. This Dockerfile is incomplete and needs to be modified to produce the results below. Hint, you may need to add an environment variable.

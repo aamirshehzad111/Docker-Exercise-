@@ -1,0 +1,3 @@
+docker inspect imagesize --format='{{.Size}}'
+docker history imagesize
+

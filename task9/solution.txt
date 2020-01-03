@@ -1,0 +1,13 @@
+1) Create daemon.josn file in /etc/Docker/. that will contain info of loggin driver
+
+2) Create Test.conf file that will recevie logs and we metion source in here
+
+3) Fluentd Container run:
+-->
+docker run -it -p 24224:24224 -v $(pwd)/test.conf:/fluentd/etc/demo.conf -e FLUENTD_CONF=test.conf fluent/fluentd:latest
+
+4) OTHER Container that will send logs to FluentD:
+-->
+docker run --log-driver=fluentd ubuntu echo "Hello Fluentd!"
+docker run --log-driver=fluentd --name nginx -d -p 8888:80 nginx
+

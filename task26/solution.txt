@@ -1,0 +1,13 @@
+It looks like something happened about 15 minutes ago. How can you determine what containers ran in the last 20 minutes?
+
+Solution:
+
+docker events --since 20m --format='{{json .}}'
+
+ps: docker events command gives reals time server evets
+--filter
+--since
+--until
+--format
+
+
